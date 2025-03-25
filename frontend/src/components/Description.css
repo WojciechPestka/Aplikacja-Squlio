@@ -1,0 +1,50 @@
+.character-build {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .character-name-input {
+    margin: 20px;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    width: 200px;
+  }
+  
+  .character-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .character-part {
+    width: 100px;
+    height: auto;
+    margin: 5px 0;
+  }
+  
+  .character-controls {
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+  }
+  
+  .finish-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #b030b0;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .finish-button:hover {
+    background-color: #8a238a;
+  }
+  

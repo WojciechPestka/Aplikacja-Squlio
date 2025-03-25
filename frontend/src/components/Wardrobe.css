@@ -1,0 +1,338 @@
+.wardrobe-main-menu {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 72px; 
+  background: url('bacground2.png') no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;    
+  box-sizing: border-box;
+}
+
+.wardrobe-main-menu::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(172, 65, 135, 0.95); 
+  z-index: 1;
+}
+
+.wardrobe-panel {
+  position: relative;
+  z-index: 2; 
+  width: 1400px;
+  height: 800px;
+  background: rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+  display: flex;
+  gap: 20px;
+  border-radius: 20px;
+}
+
+.wardrobe-left {
+  position: relative;
+  width: 600px;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wardrobe-return-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 9999;
+  font-size: 1.5rem;
+  background: rgba(255, 255, 255, 0.7);
+  color: rgba(106, 27, 154, 0.9);
+  border: none;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.wardrobe-return-button:hover {
+  transform: scale(1.08);
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.currency-bar {
+  position: absolute;
+  top: 20px;
+  left: 80px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.currency-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 2.5rem;
+  color: #fff;
+}
+.currency-item img {
+  width: 50px;
+  height: 50px;
+}
+
+.category-icons {
+  position: absolute;
+  left: 30px;
+  top: 50%; 
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.category-icon {
+  width: 80px;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.category-icon:hover {
+  transform: scale(1.08);
+  background-color: rgba(255, 255, 255, 0.85);
+}
+.category-icon img {
+  width: 42px;
+  height: 42px;
+}
+
+.character-container-w {
+  position: relative;
+  width: 375px;
+  height: 562px;
+  margin-left: 60px;
+}
+
+.wardrobe-character-part,
+.wardrobe-character-skin {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.wardrobe-character-skin.arm { z-index: 5; }
+.wardrobe-character-skin.head { z-index: 4; }
+.wardrobe-character-skin.legs { z-index: 3; }
+.wardrobe-character-part.head { z-index: 2; }
+.wardrobe-character-part.body { z-index: 1; }
+.wardrobe-character-part.legs { z-index: 0; }
+
+.wardrobe-right {
+  position: relative;
+  width: 800px;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.items-panel {
+  width: 760px;
+  height: 700px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.wardrobe-owned-item {
+  width: 200px;
+  height: 200px;
+  background: rgba(217, 217, 217, 0.19);
+  border-radius: 15px;
+  border: 2px solid transparent;
+  text-align: center;
+  color: #333;
+  cursor: pointer;
+  transition: transform 0.3s, border-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wardrobe-owned-item:hover {
+  transform: scale(1.05);
+}
+.wardrobe-owned-item.selected {
+  box-shadow: 0 0 5px 1px #fff;
+}
+
+.wardrobe-item-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .wardrobe-main-menu {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin-top: 72px;
+    overflow: hidden;
+  }
+
+  .wardrobe-panel {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 10px;
+    padding: 10px;
+    top:15px;
+  }
+
+  .wardrobe-left {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .currency-bar {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 10px;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .character-container-w {
+    width: 60%;
+    height: 50vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 5vh;
+  }
+
+  .wardrobe-character-part,
+  .wardrobe-character-skin {
+    width: 100%; 
+    height: auto; 
+    max-width: 200px; 
+    max-height: 300px; 
+  }
+
+  .category-icons {
+    position: fixed;
+    top: 65vh;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+    width: 90%;
+    z-index: 10;
+  }
+
+  .category-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .category-icon img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .wardrobe-right {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    align-items: center;
+    justify-content: flex-end; 
+  }
+
+  .items-panel {
+    width: 100%;
+    height: 180px; 
+    padding: 10px;
+    overflow-x: auto;
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin-bottom: 10px; 
+  }
+
+
+  .items-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+    white-space: nowrap;
+    overflow-x: auto;
+    scrollbar-width: thin; 
+    scrollbar-color: rgba(255, 255, 255, 0.5) transparent;
+  }
+
+  .items-grid::-webkit-scrollbar {
+    height: 6px; 
+  }
+
+  .items-grid::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .items-grid::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+  }
+
+
+  .wardrobe-owned-item {
+    width: 140px; 
+    height: 140px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    padding: 6px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  .wardrobe-item-image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}

@@ -1,0 +1,103 @@
+.heart-shop-popup {
+    position: fixed;
+    top: 55%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 200px;
+    background: linear-gradient(180deg, #221F73 -100%, #BF3676 100%);
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    color: #fff;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heart-shop-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(191, 54, 118, 1);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.heart-options {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.heart-buy {
+    background: #3F3D8F;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.heart-buy:hover {
+    background: #D65D95;
+}
+
+.life-iconHS {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 20px
+}
+
+.extracoin-iconHS {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 20px
+}
+
+.popup {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(180deg, #221F73 -100%, #BF3676 100%);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    z-index: 9999 !important;
+    display: block !important;
+}
+
+@media (max-width: 768px) {
+    .heart-shop-popup {
+        width: 350px;
+        height: 250px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

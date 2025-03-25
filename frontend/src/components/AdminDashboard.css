@@ -1,0 +1,187 @@
+
+  
+
+.AdminDashboard {
+    font-family: Arial, sans-serif;
+    position: absolute;
+    background-color: black;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 50px;
+    width: 100%;
+    margin: 40px auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-height: 97%; 
+    top: 2%;
+    overflow-y: auto; 
+    text-shadow: none !important;
+}
+
+
+.AdminDashboard p {
+    font-size: 18px;
+    color: green;
+    margin-bottom: 20px;
+    text-shadow: none !important;
+
+}
+
+
+.AdminDashboard h2 {
+    font-size: 22px;
+    color: green;
+    margin-bottom: 15px;
+    border-bottom: 2px solid green;
+    padding-bottom: 5px;
+}
+
+
+.formAD {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: black;
+    padding: 20px;
+    border: 1px solid green;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-shadow: none !important;
+
+}
+
+.formAD label {
+    font-weight: bold;
+    color: green;
+}
+
+.formAD input,
+.formAD select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid green;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    text-shadow: none !important;
+    background-color: #333;
+    color: green;
+
+}
+
+.formAD button {
+    background-color: rgb(1, 107, 1);
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-shadow: none !important;
+
+}
+
+.formAD button:hover {
+    background-color: #5a00d6;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: black;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #555;
+    text-shadow: none !important;
+
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: black;
+    border: 1px solid green;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-shadow: none !important;
+    color: green;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #333;
+    color: green;
+    font-weight: bold;
+    font-size: 16px;
+    text-shadow: none !important;
+
+}
+
+table tr:hover {
+    background-color: #f2f2f2;
+}
+
+table td {
+    font-size: 14px;
+    color: green;
+    text-shadow: none !important;
+
+}
+select {
+    background-color: green;
+    color: white;
+}
+#do_edycji{
+    background-color: green;
+    color: white;
+}
+.input_user_search{
+    background-color: green;
+    color: white
+}
+.user_stats_b {
+    background-color: green;
+    color: black;
+    height: 60px;
+    width: 120px;
+    
+}
+.user_stats_b :hover{
+    background-color: #f2f2f2;
+
+}
+
+
+
+
+@media (max-width: 768px) {
+    .AdminDashboard {
+        padding: 15px;
+    }
+
+    form input,
+    form select,
+    form button {
+        font-size: 14px;
+    }
+
+    table th,
+    table td {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,76 @@
+|-- README.md
+|-- cypress
+|   |-- e2e
+|   |   `-- answer_question.cy.js
+|   |-- integration
+|   `-- screenshots
+|-- cypress.config.js
+|-- eslint.config.js
+|-- index.html
+|-- package-lock.json
+|-- package.json
+|-- src
+|   |-- App.css
+|   |-- App.tsx
+|   |-- assets
+|   |   `-- react.svg
+|   |-- components
+|   |   |-- \ Activation.tsx
+|   |   |-- Achivments.css
+|   |   |-- Achivments.tsx
+|   |   |-- Activation.css
+|   |   |-- AdminDashboard.css
+|   |   |-- AdminDashboard.tsx
+|   |   |-- Background.css
+|   |   |-- Background.tsx
+|   |   |-- CharacterBuild.css
+|   |   |-- CharacterBuild.tsx
+|   |   |-- DailyQuestions.css
+|   |   |-- DailyQuestions.tsx
+|   |   |-- DailyStats.css
+|   |   |-- DailyStats.tsx
+|   |   |-- Description.css
+|   |   |-- Description.tsx
+|   |   |-- EditUser.tsx
+|   |   |-- EnglishQuestions.css
+|   |   |-- EnglishQuestions.tsx
+|   |   |-- Header.css
+|   |   |-- Header.tsx
+|   |   |-- HeartShop.css
+|   |   |-- HeartShop.tsx
+|   |   |-- ItemShop.css
+|   |   |-- ItemShop.tsx
+|   |   |-- Login.css
+|   |   |-- Login.tsx
+|   |   |-- MainContent.css
+|   |   |-- MainContent.tsx
+|   |   |-- MainMenu.css
+|   |   |-- MainMenu.tsx
+|   |   |-- Mascot.css
+|   |   |-- Mascot.tsx
+|   |   |-- MathQuestions.css
+|   |   |-- MathQuestions.tsx
+|   |   |-- ProgrammingQuestions.css
+|   |   |-- ProgrammingQuestions.tsx
+|   |   |-- Register.css
+|   |   |-- Register.tsx
+|   |   |-- ResetPassword.css
+|   |   |-- ResetPassword.tsx
+|   |   |-- ScienceQuestions.css
+|   |   |-- ScienceQuestions.tsx
+|   |   |-- StartButton.css
+|   |   |-- StartButton.tsx
+|   |   |-- Wardrobe.css
+|   |   |-- Wardrobe.tsx
+|   |   |-- Zadania.css
+|   |   `-- Zadania.tsx
+|   |-- index.css
+|   |-- main.tsx
+|   |-- styles
+|   `-- vite-env.d.ts
+|-- tsconfig.app.json
+|-- tsconfig.app.tsbuildinfo
+|-- tsconfig.json
+|-- tsconfig.node.json
+|-- tsconfig.node.tsbuildinfo
+`-- vite.config.ts
